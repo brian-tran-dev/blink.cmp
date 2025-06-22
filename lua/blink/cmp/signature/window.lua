@@ -87,6 +87,7 @@ function signature.open_with_signature_help(context, signature_help)
     )
   end
 
+  signature.win:set_cursor({ 1, 0 })
   signature.win:open()
   signature.update_position()
 end
@@ -106,6 +107,8 @@ end
 
 function signature.scroll_down(amount)
   local winnr = signature.win:get_win()
+  if winnr == nil then return end
+
   local line_count = vim.api.nvim_buf_line_count(signature.win:get_buf())
   local bottom_line = math.max(1, vim.fn.line('w$', winnr) + 1)
   local desired_line = math.min(line_count, bottom_line + amount)
