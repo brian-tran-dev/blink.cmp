@@ -19,6 +19,8 @@
 --- | 'scroll_documentation_down' Scroll the documentation window down
 --- | 'show_signature' Show the signature help window
 --- | 'hide_signature' Hide the signature help window
+--- | 'scroll_signature_up' Scroll the documentation window up
+--- | 'scroll_signature_down' Scroll the documentation window down
 --- | 'snippet_forward' Move the cursor forward to the next snippet placeholder
 --- | 'snippet_backward' Move the cursor backward to the previous snippet placeholder
 --- | (fun(cmp: blink.cmp.API): boolean?) Custom function where returning true will prevent the next command from running
