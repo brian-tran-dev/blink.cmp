@@ -191,6 +191,8 @@ function keymap.validate(config, is_mode)
     'scroll_documentation_down',
     'show_signature',
     'hide_signature',
+    'scroll_signature_up',
+    'scroll_signature_down',
     'snippet_forward',
     'snippet_backward',
   }
