@@ -87,9 +87,9 @@ function signature.open_with_signature_help(context, signature_help)
     )
   end
 
-  signature.win:set_cursor({ 1, 0 })
   signature.win:open()
   signature.update_position()
+  signature.scroll_up(4)
 end
 
 function signature.close()
