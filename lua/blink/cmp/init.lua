@@ -249,7 +249,7 @@ function cmp.scroll_documentation_up(count)
   local documentation = require('blink.cmp.completion.windows.documentation')
   if not documentation.win:is_open() then return end
 
-  vim.schedule(function() documentation.scroll_up(count or 4) end)
+  vim.schedule(function() documentation.scroll_up(count or 1) end)
   return true
 end
 
@@ -259,7 +259,7 @@ function cmp.scroll_documentation_down(count)
   local documentation = require('blink.cmp.completion.windows.documentation')
   if not documentation.win:is_open() then return end
 
-  vim.schedule(function() documentation.scroll_down(count or 4) end)
+  vim.schedule(function() documentation.scroll_down(count or 1) end)
   return true
 end
 
@@ -289,7 +289,7 @@ function cmp.scroll_signature_up(count)
   local sig = require('blink.cmp.signature.window')
   if not sig.win:is_open() then return end
 
-  vim.schedule(function() sig.scroll_up(count or 4) end)
+  vim.schedule(function() sig.scroll_up(count or 1) end)
   return true
 end
 
@@ -299,7 +299,7 @@ function cmp.scroll_signature_down(count)
   local sig = require('blink.cmp.signature.window')
   if not sig.win:is_open() then return end
 
-  vim.schedule(function() sig.scroll_down(count or 4) end)
+  vim.schedule(function() sig.scroll_down(count or 1) end)
   return true
 end
 
